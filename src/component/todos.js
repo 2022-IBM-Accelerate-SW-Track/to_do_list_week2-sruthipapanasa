@@ -21,10 +21,8 @@ const Todos = ({ todos, deleteTodo }) => {
             <ListItemButton component="a" href="#simple-list">
               <Checkbox
               style={{paddingLeft:0}} color="primary" onClick={()=>deleteTodo(todo.id)}/>
-              <ListItemText primary={todo.content}
-              secondary={todo.date}/>
+              <ListItemText primary={todo.content} secondary={todo.date}/>
             </ListItemButton>
-            style={{marginTop:10}}
           </Card>
         </Grid>
       );
